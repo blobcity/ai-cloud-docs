@@ -33,8 +33,8 @@ output:
 requirements: requirements.txt
 main: usage.ipynb
 performance:
- - accuracy: 0.5
- - f1score: 0.5 
+ accuracy: 0.5
+ f1score: 0.5 
 env:
  MODEL_PATH: ./model.pkl
 ``` 
