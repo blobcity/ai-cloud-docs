@@ -20,19 +20,23 @@ Support input and output options are JSON, text, image, audio & video
 **Example** :
 
 **saved by name:** blobcity.yaml
-
-| version: 1
- meta:
+```
+version: 1
+meta:
  name: Model1
- input:
+input:
  type: image
- output:
+output:
  type: image
- requirements: requirements.txtmain: usage.ipynb
- performance:
- - accuracy: 0.5
- - f1score: 0.5 |
-| --- |
+requirements: requirements.txtmain: usage.ipynb
+performance:
+ accuracy: 0.5
+ f1score: 0.5 
+env:
+ MODEL_PATH: ./model.h5
+
+```
+One can have n numbers of environment variables utilized in the Main function but should have a matching environment variable mentioned in the YAML file and Main function. The variable mentioned in the env section must be all Capitalized letters without any whitespace.
 
 ## Reporting model performance
 
