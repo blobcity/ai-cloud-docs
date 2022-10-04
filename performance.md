@@ -83,7 +83,3 @@ Include any of the following fields within the performance section of the YAML. 
 | perplexity | **Perplexity** is a measurement of how well a [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution) or [probability model](https://en.wikipedia.org/wiki/Probability_model)[predicts](https://en.wikipedia.org/wiki/Prediction) a [sample](https://en.wikipedia.org/wiki/Sample_(statistics)). It may be used to compare probability models. A low perplexity indicates the probability distribution is good at predicting the sample. |
 
 Also include the requirement.txt file in the submission with the required version of the library mentioned in it.
-
-Sample folder structure to generate a snapshot on the BlobCity AI Cloud
-
-![](RackMultipart20221003-1-t7tsc8_html_6d3f00d3dbf45257.png)
