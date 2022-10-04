@@ -16,23 +16,30 @@ Support input and output options are JSON, text, image, audio & video
 | input.type | Mandatory |
 | requirements | Optional |
 | performance | Optional |
+| env | Mandatory |
 
 **Example** :
 
 **saved by name:** blobcity.yaml
 
-| version: 1
- meta:
+```
+version: 1
+meta:
  name: Model1
- input:
+input:
  type: image
- output:
+output:
  type: image
- requirements: requirements.txtmain: usage.ipynb
- performance:
+requirements: requirements.txt
+main: usage.ipynb
+performance:
  - accuracy: 0.5
- - f1score: 0.5 |
-| --- |
+ - f1score: 0.5 
+env:
+ MODEL_PATH: ./model.pkl
+``` 
+
+The relative path of the saved models should be mentioned in the ‘env’ section of the YAML configuration file. One can have n numbers of environment variables utilized in the Main function but should have a matching environment variable mentioned in the YAML file and Main function. The variable mentioned in the env section must be all Capitalized letters without any whitespace.
 
 ## Reporting model performance
 
