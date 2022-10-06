@@ -16,6 +16,7 @@ Support input and output options are JSON, text, image, audio & video
 | input.type | Mandatory |
 | requirements | Optional |
 | performance | Optional |
+| env | Mandatory |
 
 **Example** :
 
