@@ -28,7 +28,8 @@ input:
  type: image
 output:
  type: image
-requirements: requirements.txtmain: usage.ipynb
+requirements: requirements.txt
+main: usage.ipynb
 performance:
  accuracy: 0.5
  f1score: 0.5 
