@@ -12,6 +12,7 @@ Support input and output options are JSON, text, image, audio & video
 | --- | --- |
 | version | Optional |
 | meta.name | Mandatory |
+| meta.description | Mandatory |
 | output.type | Mandatory |
 | input.type | Mandatory |
 | requirements | Optional |
@@ -25,6 +26,7 @@ Support input and output options are JSON, text, image, audio & video
 version: 1
 meta:
  name: Model1
+ description: Model Description
 input:
  type: image
 output:
