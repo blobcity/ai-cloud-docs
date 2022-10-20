@@ -14,7 +14,9 @@ Support input and output options are JSON, text, image, audio & video
 | meta.name | Mandatory |
 | meta.description | Mandatory |
 | output.type | Mandatory |
+| output.file | Mandatory |
 | input.type | Mandatory |
+| input.file | Mandatory |
 | requirements | Optional |
 | performance | Optional |
 | env | Mandatory |
@@ -30,8 +32,10 @@ meta:
  description: MODEL DESCRIPTION
 input:
  type: image
+ file: input.jpg
 output:
  type: image
+ file: output.pjpg
 requirements: requirements.txt
 main: usage.ipynb
 performance:
