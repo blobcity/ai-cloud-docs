@@ -14,7 +14,9 @@ Support input and output options are JSON, text, image, audio & video
 | meta.name | Mandatory |
 | meta.description | Mandatory |
 | output.type | Mandatory |
+| output.file | Mandatory |
 | input.type | Mandatory |
+| input.file | Mandatory |
 | requirements | Optional |
 | performance | Optional |
 | env | Mandatory |
@@ -29,8 +31,10 @@ meta:
  description: Model Description
 input:
  type: image
+ file: input.png
 output:
  type: image
+ file: output.png
 requirements: requirements.txt
 main: usage.ipynb
 performance:
@@ -40,7 +44,7 @@ env:
  MODEL_PATH: ./model.h5
 
 ```
-One can have n numbers of environment variables utilized in the Main function but should have a matching environment variable mentioned in the YAML file and Main function. The variable mentioned in the env section must be all Capitalized letters without any whitespace.
+One can have n numbers of environment variables utilized in the Main function but should have a matching environment variable mentioned in the YAML file and Main function. The variable mentioned in the env section must be all Capitalized letters without any whitespace.The key file must be specified by the creator/Author of the model along with the appropriate file format.
 
 ## Reporting model performance
 
