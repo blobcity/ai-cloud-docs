@@ -44,7 +44,7 @@ env:
  MODEL_PATH: ./model.h5
 
 ```
-One can have n numbers of environment variables utilized in the Main function but should have a matching environment variable mentioned in the YAML file and Main function. The variable mentioned in the env section must be all Capitalized letters without any whitespace.The key file must be specified by the creator/Author of the model along with the appropriate file format.
+One can have n numbers of environment variables utilized in the Main function but should have a matching environment variable mentioned in the YAML file and Main function. The variable mentioned in the env section must be all Capitalized letters without any whitespace.The key *file* must be predefined by the creator/author of the model in the YAML configuration. If your model takes text input and returns text output (NLP models), enter the *file* value as null/None for input and output. While for the Image or Video Generative AI model, set the Input file value as None/null, while for the output *file* key, specify the file name with an extension. For example. output.png or output.mp4 to save the file.
 
 ## Reporting model performance
 
