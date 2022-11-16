@@ -14,12 +14,14 @@ Support input and output options are JSON, text, image, audio & video
 | meta.name | Mandatory |
 | meta.description | Mandatory |
 | output.type | Mandatory |
-| output.file | Mandatory |
+| output.file | Conditional |
 | input.type | Mandatory |
 | input.file | Mandatory |
 | requirements | Optional |
 | performance | Optional |
 | env | Mandatory |
+
+* Conditional : Output file depends on input type and problem statement. if the problem requires saving result output then one have to include the output file key value. for example, if the problem is for face detection in the image, save the resulting bounding box image with the specified name in the YAML configuration.
 
 **Example** :
 
@@ -50,8 +52,9 @@ One can have n numbers of environment variables utilized in the Main function bu
 
 Include any of the following fields within the performance section of the YAML. It is not compulsory to include the performance section, but it is recommended that you include. Mention as many parameters as possible. These parameters help other users evaluate your model and compare it with other models
 
-| accuracy | **Accuracy Percentage** Indicates the prediction accuracy of the manner, from a range of 0 - 1.0, where 0 means 0% accuracy, and a value of 1.0 means a 100% accuracy. |
+| **metrics** | **description** |
 | --- | --- |
+| accuracy | **Accuracy Percentage** Indicates the prediction accuracy of the manner, from a range of 0 - 1.0, where 0 means 0% accuracy, and a value of 1.0 means a 100% accuracy. |
 | r2 | **R squared** Proportion of the variance in the independent variable that is predictable from independent variables. |
 | mse | **Mean square error** Average of the square data between the original and predicted values of data` |
 | mae | **Mean absolute error** Average of the absolute value of the difference between the true values and predicted values |
