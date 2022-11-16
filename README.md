@@ -6,7 +6,7 @@ Along with the above-mentioned requirements and changes, include a YAML file whi
 
 YAML file contains details regarding input format, output format, and usage file name which included above mentioned main function.
 
-Support input and output options are JSON, text, image, audio & video
+Support input and output options are JSON,doc, text, image, audio & video
 
 | **Key** | **Required** |
 | --- | --- |
@@ -14,12 +14,14 @@ Support input and output options are JSON, text, image, audio & video
 | meta.name | Mandatory |
 | meta.description | Mandatory |
 | output.type | Mandatory |
-| output.file | Mandatory |
+| output.file | Conditional |
 | input.type | Mandatory |
 | input.file | Mandatory |
 | requirements | Optional |
 | performance | Optional |
 | env | Mandatory |
+
+* Conditional : Output file depends on input type and problem statement. if the problem requires saving result output then one have to include the output file key value. for example, if the problem is for face detection in the image, save the resulting bounding box image with the specified name in the YAML configuration.
 
 **Example** :
 
